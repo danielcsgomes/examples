@@ -1,0 +1,8 @@
+parameters:
+    dropbox.app.key: 'YOUR APP KEY'
+    dropbox.app.secret: 'YOUR APP SECRET'
+
+    database.name: 'YOUR DATABASE NAME'
+    database.host: 'HOST'
+    database.user: 'USERNAME'
+    database.password: 'PASSWORD'

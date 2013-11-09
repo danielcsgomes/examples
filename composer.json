@@ -11,9 +11,18 @@
         "symfony/console": "2.4.*@dev",
         "dropbox/dropbox-sdk": "1.1.*",
         "symfony/yaml": "2.4.*@dev",
-        "doctrine/dbal": "2.5.*@dev"
+        "symfony/dependency-injection": "2.4.*@dev",
+        "symfony/config": "2.4.*@dev",
+        "chrisnharvey/oauth1": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*@dev"
+    },
+    "autoload": {
+        "classmap": ["src/", "vendor/"],
+        "psr-0": {
+            "": "src/"
+        }
     }
+
 }
