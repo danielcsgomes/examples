@@ -44,14 +44,10 @@ class DumpDatabaseCommand extends BaseCommand
 
         $options = $this->getOptions($input);
 
-        $mysqldump = <<<EOL
+        $mysqldump = <<<EOF
 mysqldump -u{$dbUser} -p{$dbPassword} -h{$dbHost} {$options} --databases {$dbNames} > {$filename}
-EOL;
+EOF;
         exec($mysqldump);
-    }
-
-    protected function interact(InputInterface $input, OutputInterface $output)
-    {
     }
 
     private function getOptions(InputInterface $input)

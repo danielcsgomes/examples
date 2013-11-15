@@ -2,5 +2,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$app = new Application();
+use Command\DumpDatabaseCommand;
+
+$app = new Application('Examples', '0.0.1');
+$app->add(new DumpDatabaseCommand());
 $app->run();
